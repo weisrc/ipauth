@@ -1,0 +1,18 @@
+{
+  "authorized": {
+    "48c134d2-d6df-4b81-8a28-1aff29ea834e": [
+      "asdf"
+    ],
+    "cc34bfd5-106d-3e02-83f4-732dfa1b29d5": [
+      "127.0.0.1"
+    ],
+    "TheAnnoyingMoose": [
+      "10.147.18.36"
+    ],
+    "weisway": [
+      "127.0.0.1"
+    ]
+  },
+  "auto_authorize": false,
+  "use_uuid": true
+}
