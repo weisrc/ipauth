@@ -33,7 +33,14 @@ Set use_uuid property from the game.
 ```
 /ipauth setuseuuid true|false
 ```
-
+Get general information.
+```
+/ipauth info
+```
+Get info on a IP or a user.
+```
+/ipauth info IP|user
+```
 ## Config
 
 The config is in JSON format.
