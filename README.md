@@ -27,11 +27,11 @@ Remove IP addresses the player can join with.
 ```
 Set auto_auth property from the game.
 ```
-/ipauth auto_auth true|false
+/ipauth setautoauth true|false
 ```
 Set use_uuid property from the game.
 ```
-/ipauth use_uuid true|false
+/ipauth setuseuuid true|false
 ```
 
 ## Config
@@ -43,7 +43,7 @@ The config is in JSON format.
  authorized: {
   "USERNAME": ["IP 1", "IP 2"]
  },
- auto_authorize: true, // on first join, automatically register the user to authorized list with the joining IP.
+ auto_authorize: true, // on first join, automatically register the user to authorized list with the joining IP. (will be auto_auth on next release)
  use_uuid: true // use the uuid instead of using the username to identify the users in the authorized list.
 }
 ```
