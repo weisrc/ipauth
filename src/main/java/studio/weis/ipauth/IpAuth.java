@@ -8,7 +8,6 @@ import net.fabricmc.fabric.api.networking.v1.ServerPlayConnectionEvents;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-
 @SuppressWarnings("unused")
 public class IpAuth implements ModInitializer {
 

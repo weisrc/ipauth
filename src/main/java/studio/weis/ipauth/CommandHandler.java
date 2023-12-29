@@ -3,7 +3,7 @@ package studio.weis.ipauth;
 import com.mojang.brigadier.builder.LiteralArgumentBuilder;
 import com.mojang.brigadier.context.CommandContext;
 import com.mojang.brigadier.exceptions.CommandSyntaxException;
-import net.fabricmc.fabric.api.command.v1.CommandRegistrationCallback;
+import net.fabricmc.fabric.api.command.v2.CommandRegistrationCallback;
 import net.minecraft.server.command.ServerCommandSource;
 
 import java.util.ArrayList;
@@ -22,7 +22,7 @@ import static net.minecraft.server.command.CommandManager.literal;
 public record CommandHandler(Authorizer authorizer) {
     public CommandHandler(Authorizer authorizer) {
         this.authorizer = authorizer;
-        CommandRegistrationCallback.EVENT.register((dispatcher, dedicated) -> {
+        CommandRegistrationCallback.EVENT.register((dispatcher, dedicated, environment) -> {
             dispatcher.register(rootCommand());
         });
     }
